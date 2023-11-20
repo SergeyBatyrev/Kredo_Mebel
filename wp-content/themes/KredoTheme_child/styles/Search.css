@@ -1,0 +1,23 @@
+.catalog_img1 {
+  border-radius: 20px;
+}
+@media (max-width: 1048px) {
+  .visible {
+    width: 366px !important;
+  }
+}
+@media (max-width: 797px) {
+  .visible {
+    width: 535px !important;
+    height: auto;
+  }
+  .catalog_card_album:hover .card_album_cover_detail {
+    display: none;
+  }
+  .catalog_title {
+    line-height: 50px;
+  }
+  .search_card {
+    height: 95% !important;
+  }
+}

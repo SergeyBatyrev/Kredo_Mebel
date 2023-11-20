@@ -1,0 +1,35 @@
+.catalog {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+.catalog span {
+  font-size: 28px;
+}
+.ContactAdress_block span {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.ContactAdress_block ul {
+  margin-top: 40px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.ContactAdress_block li {
+  margin: 8px 0 8px 25px;
+}
+iframe {
+  width: 100% !important;
+  height: 512px;
+}
+
+@media (max-width: 580px) {
+    .ContactAdress_block span {
+        font-size: 18px;
+        margin: 18px 0;
+    }
+}
+
+

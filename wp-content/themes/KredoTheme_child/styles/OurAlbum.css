@@ -1,0 +1,175 @@
+.catalog_cover_slider {
+  /* display: flex; */
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #5f5858d1;
+}
+.ButtonClose {
+  position: absolute;
+  left: 80%;
+  top: 20px;
+  content: "";
+  width: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+.ButtonClose:hover:after,
+.ButtonClose:hover:before {
+  background-color: #d6d12d;
+}
+.ButtonClose::after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: white;
+  transform: rotate(45deg);
+  margin-top: -40px;
+}
+.ButtonClose::before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+.catalog_cover_slider .swiper-slide {
+  height: 600px !important;
+}
+.catalog_cover_slider .swiper1 {
+  width: 100%;
+  user-select: none;
+  position: relative;
+  text-align: center;
+}
+.catalog_cover_slider .slider {
+  margin: 0 auto;
+  width: 98%;
+  background-color: hsla(0, 5%, 53%, 0);
+  margin-top: 80px;
+}
+.catalog_cover_slider .swiper-button-next {
+  color: rgb(223, 211, 211) !important;
+  font-size: 80px;
+  left: 70%;
+}
+.catalog_cover_slider .swiper-button-prev {
+  color: rgb(223, 211, 211) !important;
+  font-size: 80px;
+  left: 26%;
+  top: -74px;
+}
+.catalog_cover_slider .swiper-button-next:hover,
+.catalog_cover_slider .swiper-button-prev:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.catalog_cover_slider .swiper-pagination-fraction {
+  color: aliceblue;
+  font-size: 16px;
+}
+
+.catalog_cover_slider .swiper-slide {
+  height: 400px;
+  border: none;
+}
+.ClientCatalog {
+  display: block;
+  column-count: 3;
+  column-gap: 0px;
+}
+.catalog {
+  text-align: center;
+}
+.catalog_title {
+  font-size: 25px;
+}
+.catalog_card_album {
+  margin-bottom: 0px;
+  border-radius: 0;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 3px;
+}
+.catalog_card_album:hover {
+  transform: none;
+}
+.visible {
+  display: inline;
+  width: 325px;
+  height: auto;
+}
+.visible:hover {
+  box-shadow: 1px 1px 10px 2px rgb(96, 139, 106);
+}
+
+@media (max-width: 715px) {
+  .catalog_title {
+    line-height: 50px;
+  }
+}
+
+/* И далее остается настроить по вкусу адаптивность, например так: */
+
+@media (max-width: 798px) {
+  .ClientCatalog {
+    column-count: 2;
+  }
+  .visible {
+    height: auto !important;
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .visible {
+    width: 280px !important;
+  }
+}
+@media (max-width: 680px) {
+  .ClientCatalog {
+    column-count: 1 !important;
+  }
+  .visible {
+    width: 350px !important;
+  }
+}
+@media (max-width: 540px) {
+  .catalog_cover_slider .swiper-button-next {
+    left: 80%;
+    margin-top: 0;
+  }
+  .ButtonClose {
+    top: 9px;
+  }
+  .catalog_cover_slider .swiper-button-prev {
+    left: 12%;
+    /* margin-top: 0; */
+  }
+  .swiper-zoom-container {
+    align-items: start;
+  }
+}
+
+@media (max-width: 383px) {
+  .visible {
+    width: 321px !important;
+  }
+  .catalog_title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 355px) {
+    .visible {
+        width: 280px !important;
+      }
+
+}

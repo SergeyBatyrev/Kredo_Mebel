@@ -1,0 +1,145 @@
+.Contact_block {
+  display: flex;
+  justify-content: space-between;
+}
+.header_link_tel {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.header_link_tel span {
+  margin-left: 20px;
+}
+.contact_top_items {
+  padding: 0;
+}
+.header_link_tel::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../img/tel-icon.png) no-repeat center/40px;
+}
+.header_link_tel:hover {
+  color: #949131;
+}
+.header_contact_link {
+  width: auto;
+}
+.catalog {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+.catalog_title {
+  font-size: 24px;
+}
+.catalog p:nth-child(2) {
+  font-weight: bold;
+  font-size: 22px;
+}
+p:nth-child(3),
+p:nth-child(4),
+p:nth-child(6),
+p:nth-child(7) {
+  font-weight: 400;
+  font-size: 18px;
+}
+p:nth-child(5) {
+  font-weight: bold;
+  font-size: 20px;
+}
+p:nth-child(9) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.SocialContacts {
+  display: flex;
+  column-gap: 40px;
+}
+.contacts_block_left,
+.contacts_block_right {
+  width: 50%;
+}
+.contacts_block_right {
+  padding: 0 0 0 120px;
+}
+.contacts_block_right p {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+label {
+  display: block;
+  padding: 2px 0;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px;
+}
+#messege {
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+}
+#submit {
+  margin-top: 25px;
+  cursor: pointer;
+}
+#name {
+  width: 100%;
+}
+._error {
+  border: 1px solid red;
+}
+.contact_message_form._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1047px) {
+  .contacts_block_right {
+    width: 40%;
+    padding: 0;
+  }
+}
+@media (max-width: 766px) {
+  .contacts_block_right {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .contacts_block_right {
+    width: 45%;
+  }
+}
+@media (max-width: 680px) {
+  .Contact_block {
+    display: block;
+  }
+  .contacts_block_right {
+    width: 86%;
+    margin: 0 auto;
+  }
+  .contacts_block_left {
+    width: 86%;
+    margin: 0 auto;
+  }
+  .link2 {
+    width: auto !important;
+  }
+}
+@media (max-width: 402px) {
+  .header_link_tel span {
+    margin-left: 5px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+}

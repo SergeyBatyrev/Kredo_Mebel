@@ -1,0 +1,120 @@
+.header_top_link_social {
+  margin-bottom: 0;
+}
+
+/* КАРТОЧКИ АЛЬБОМОВ */
+
+.card_album_cover {
+  background-color: rgba(179, 179, 179, 0);
+}
+
+.catalog_card_album {
+  display: none;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #696969;
+}
+.card_album_cover_detail {
+  display: none;
+  position: absolute;
+  top: 200px;
+  line-height: 35px;
+  background-color: #c7c346;
+  border-radius: 15px;
+}
+.catalog_card_album:hover .card_album_cover_detail {
+  display: block;
+  transition: 0.3s;
+  color: black;
+}
+.card_album_cover_detail:hover {
+  background-color: #a39f29;
+}
+
+.catalog_title,
+.catalog_title2 {
+  position: relative;
+  display: block;
+  width: 1000px;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+.catalog_title2 {
+  margin-bottom: 32px;
+}
+.catalog_img1 {
+  width: 300px;
+  height: 190px;
+  background-position: center -10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.2s linear;
+}
+
+.cover {
+  text-align: center;
+}
+.visible {
+  display: flex;
+}
+
+/* плавное появление карточек */
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ShowMore {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  padding: 10px 18px 8px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid;
+  transition: 0.1s linear;
+  background-color: #fff;
+}
+.ShowMore:hover {
+  background-color: #f2f0f0;
+}
+
+@media (max-width: 1048px) {
+  .catalog_title,
+  .catalog_title2 {
+    width: 768px;
+  }
+.catalog_img1{
+
+width: 365px;
+}
+}
+@media (max-width: 797px) {
+  .catalog_card_album:hover .card_album_cover_detail {
+    display: none;
+  }
+  .visible_at_first {
+    width: 98% !important;
+    height: 50vw !important;
+    margin-bottom: 30px;
+  }
+  .catalog_img1{
+height: 100%;
+    width: 98%;
+    }
+
+}
+
+@media (max-width: 470px) {
+  .catalog_title {
+    line-height: 50px;
+  }
+}

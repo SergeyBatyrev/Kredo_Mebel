@@ -1,0 +1,31 @@
+.catalog {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.menuTitle {
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 80px;
+}
+.contentAboutUS {
+  text-align: left;
+  font-size: 22px;
+  line-height: 32px;
+}
+.contentAboutUS p {
+  text-indent: 50px;
+}
+.contentAboutUS a {
+  font-weight: 800;
+}
+.contentAboutUS a:hover {
+  text-decoration: underline 1px;
+}
+@media (max-width: 600px) {
+    .menuTitle {
+        line-height: 50px;
+    }
+}
